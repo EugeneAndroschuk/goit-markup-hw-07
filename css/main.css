@@ -128,13 +128,16 @@ img {
 }
 
 .pageheader {
+  border-bottom: 1px solid #ececec;
+}
+
+.pageheader-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .pageheader-navigation {
@@ -167,11 +170,15 @@ img {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link__active {
+.nav-link:hover, .nav-link:focus {
+  color: var(--btnbgd-linkactive-color);
+}
+
+.nav-item__active {
   position: relative;
   color: var(--btnbgd-linkactive-color);
 }
-.nav-link__active::after {
+.nav-item__active::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -180,9 +187,6 @@ img {
   height: 4px;
   border-radius: 2px;
   background-color: var(--btnbgd-linkactive-color);
-}
-.nav-link:hover, .nav-link:focus {
-  color: var(--btnbgd-linkactive-color);
 }
 
 .contacts {
@@ -242,6 +246,7 @@ img {
   padding-bottom: 30px;
   max-width: 696px;
   display: block;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
@@ -392,6 +397,7 @@ img {
 }
 
 .team-member {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -400,6 +406,7 @@ img {
 }
 
 .team-position {
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondery-text-color);
@@ -413,8 +420,7 @@ img {
   display: flex;
   gap: 10px;
 }
-
-.social-icon__header {
+.social-list__colorized {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +438,7 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon__header:hover, .social-icon__header:focus {
+.social-list__colorized:hover, .social-list__colorized:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,7 +456,7 @@ img {
 }
 
 .clients {
-  background-color: var(--filter-btn-bgd-color);
+  background-color: var(--herobtntext-primbgd-color);
 }
 
 .clients-list {
@@ -556,7 +562,7 @@ img {
   color: var(--btnbgd-linkactive-color);
 }
 
-.social-icon__footer {
+.social-list__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,7 +580,7 @@ img {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon__footer:hover, .social-icon__footer:focus {
+.social-list__footer:hover, .social-list__footer:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

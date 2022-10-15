@@ -3,7 +3,7 @@
 }
 
 .team-title {
-    @extend %section-title;
+  @extend %section-title;
 }
 
 .team-list {
@@ -26,6 +26,7 @@
 }
 
 .team-member {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -35,6 +36,7 @@
 }
 
 .team-position {
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondery-text-color);
@@ -46,17 +48,19 @@
 .social-list {
   display: flex;
   gap: 10px;
-}
 
-.social-icon__header {
+  &__colorized {
     @include socialIconColor(var(--herobtntext-primbgd-color), #afb1b8);
-    
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover,
-&:focus {
-    @include socialIconColor(var(--btnbgd-linkactive-color), var(--herobtntext-primbgd-color));
+    &:hover,
+    &:focus {
+      @include socialIconColor(
+        var(--btnbgd-linkactive-color),
+        var(--herobtntext-primbgd-color)
+      );
+    }
+  }
 }
-}
-

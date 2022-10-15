@@ -1,9 +1,9 @@
 .clients {
-  background-color: var(--filter-btn-bgd-color);
+  background-color: var(--herobtntext-primbgd-color);
 }
 
 .clients-title {
-     @extend %section-title;
+  @extend %section-title;
 }
 
 .clients-list {
@@ -30,17 +30,14 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-        border: 1px solid var(--btnbgd-linkactive-color);
-        .clients-icon {
-            fill: var(--btnbgd-linkactive-color);
-        }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--btnbgd-linkactive-color);
+    .clients-icon {
+      fill: var(--btnbgd-linkactive-color);
     }
+  }
 }
-
-
-
 
 // .clients-item:hover .clients-icon,
 // .clients-item:focus .clients-icon {
